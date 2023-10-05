@@ -73,3 +73,10 @@ https://www.mad5.de/ownnote/
 wrapped into an android-app:
 
 [https://play.google.com/store/apps/details?id=de.mad5.ownnote](https://play.google.com/store/apps/details?id=de.mad5.ownnote)
+
+# used libraries:
+
+* framework7: https://framework7.io/
+* easymde: https://github.com/ionaru/easy-markdown-editor
+* showdown: https://github.com/showdownjs/showdown
+* jquery: https://jquery.com/
