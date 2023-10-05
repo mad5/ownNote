@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!--
+  Customize this policy to fit your own app's needs. For more guidance, see:
+      https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+  Some notes:
+      * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+      * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+      * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+          * Enable inline JS: add 'unsafe-inline' to default-src
+  -->
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap: content:">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="theme-color" content="#2196f3">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <link rel="shortcut icon" href="./favicon.ico">
+  <link rel="icon" sizes="16x16 32x32 64x64" href="./favicon.ico">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <title>ownNote</title>
+
+  <link rel="stylesheet" href="fw/framework7/css/framework7-bundle.min.css">
+  <link rel="stylesheet" href="fw/css/icons.css">
+  <link rel="stylesheet" href="fw/css/framework7-icons.css">
+  <link rel="stylesheet" href="fw/css/mfwfw7.css">
+
+  <link rel="stylesheet" href="./app.css?v=1">
+  <link rel="stylesheet" href="./css/easymde.min.css">
+
+  <script>
+    var app_id = "ownnote";
+  </script>
+
+  <script src='fw/js/jquery-3.6.0.min.js'></script>
+  <script src='fw/utils.js'></script>
+  <script src='fw/fw7util.js'></script>
+<!--  <script src='fw/sql.js'></script> -->
+  <script src='fw/indexeddb.js'></script>
+  <script src='fw/localstorage.js'></script> <!-- insert after sql -->
+  <script src='fw/tpl.js'></script>
+
+
+  <style>
+    .page {
+      /*background: #efeff4;*/
+    }
+  </style>
+</head>
+<body class="color-red">
+<div id="app">
+
+  <!-- Status bar overlay for fullscreen mode-->
+  <div class="statusbar"></div>
+
+  <!-- Left panel with cover effect-->
+<div class="panel panel-left panel-cover">
+
+	<div class="navbar">
+		<div class="navbar-inner">
+			<div class="title">ownNote</div>
+		</div>
+	</div>
+		<div class="block" style="padding-left:0;padding-right:0;margin-top:0;">
+
+			<div class="list links-list" style="margin-top:0px;">
+				<ul>
+
+
+					<li>
+						<a href="/categories/" class="panel-close" >categories</a>
+					</li>
+					<li>
+						<hr>
+					</li>
+					<li>
+						<a href="/settings/" class="panel-close" >settings</a>
+					</li>
+					<li>
+						<a href="/backup/" class="panel-close" >backup/restore</a>
+					</li>
+					<li>
+						<hr>
+					</li>
+
+					<li>
+						<a href="/about/" class="panel-close" >about</a>
+					</li>
+					<li>
+						<a href="/privacy/" class="panel-close" >privacy policy</a>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+
+
+
+</div>
+
+  
+<!-- Right panel with reveal effect-->
+<div class="panel panel-right panel-reveal">
+
+			<div class="navbar">
+				<div class="navbar-inner">
+					<div class="title">Right Panel</div>
+				</div>
+			</div>
+		<div class="block" style="padding-left:0;padding-right:0;margin-top:0;">
+
+			<div class="list links-list" style="margin-top:0px;">
+				<ul>
+
+					<li>
+						<a href="/seiten/" class="panel-close" >Link auf Seite</a>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+	
+</div>
+
+  <!-- Your main view, should have "view-main" class -->
+  <div class="view view-main ios-edges">
+
+    <!-- PAGE-CONTENT -->
+
+  </div>
+
+  <!-- Cordova -->
+
+  <script src="cordova.js"></script>
+
+
+  <!-- Framework7 library -->
+  <script src="fw/framework7/js/framework7-bundle.min.js"></script>
+
+  <!-- App routes -->
+  <script src="routes.js"></script>
+
+  <!-- Your custom app scripts -->
+  <script src="preinit.js"></script>
+  <script src="js/about.js?ts=1696513879"></script>
+<script src="js/backup.js?ts=1696513879"></script>
+<script src="js/catedit.js?ts=1696513879"></script>
+<script src="js/categories.js?ts=1696513879"></script>
+<script src="js/databasedefinition.js?ts=1696513879"></script>
+<script src="js/databasedefinitionidb.js?ts=1696513879"></script>
+<script src="js/easymde.min.js?ts=1696513879"></script>
+<script src="js/edit.js?ts=1696513879"></script>
+<script src="js/home.js?ts=1696513879"></script>
+<script src="js/init.js?ts=1696513879"></script>
+<script src="js/privacy.js?ts=1696513879"></script>
+<script src="js/settings.js?ts=1696513879"></script>
+<script src="js/showdown.min.js?ts=1696513879"></script>
+<script src="js/view.js?ts=1696513879"></script>
+
+  <script src="app.js"></script>
+
+  <!-- {develop:js} -->
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<div class="page" data-name="backup">
+	<div class="navbar">
+	<div class="navbar-inner sliding">
+		<div class="left">
+			<a href="#" class="link back">
+				<i class="icon icon-back"></i>
+				<span class="ios-only">back</span>
+			</a>
+		</div>
+		<div class="title sliding">Backup/Restore</div>
+	</div>
+</div>
+
+
+    <div class="page-content">
+
+        <div class="block">
+            <h2>Backup all entries</h2>
+
+            <div class="list myformId">
+                <ul>
+                    <li>
+                        <div class="block block-strong">
+                            <div class="row">
+                                <button class="button  button-fill button-round" onclick="APP.backup.backup();">backup</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="bl"></div>
+
+
+        </div>
+
+            <hr>
+
+        <div class="block">
+            <h2>Restore from previous backup</h2>
+
+            <p>
+               <b>Please note: the restore will overwrite all existing data!</b>
+            </p>
+
+            <div class="list myformId">
+                <ul>
+                    <li>
+                        <div class="block block-strong">
+                            <div class="row">
+                                <input type="file" name="" class="restorefile" onchange="APP.backup.restore();">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>

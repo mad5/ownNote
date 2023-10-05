@@ -1,0 +1,28 @@
+.preline p {
+    white-space: pre-line;
+}
+
+.CodeMirror {
+    height: calc(100vh - 140px) !important;
+    /*background-color: transparent !important;*/
+}
+.editor-toolbar {
+    background-color: white;
+}
+
+.editor-toolbar button {
+    width: auto;
+}
+
+html.dark .navbar {
+    background-color: #000000;
+}
+.navbar {
+    background-color: white;
+}
+
+.view-note p {
+
+        margin: 0.5em 0;
+
+}

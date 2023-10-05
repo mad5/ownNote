@@ -1,0 +1,38 @@
+<div class="page" data-name="categories">
+	<div class="navbar">
+	<div class="navbar-inner sliding">
+		<div class="left">
+			<a href="#" class="link back">
+				<i class="icon icon-back"></i>
+				<span class="ios-only">back</span>
+			</a>
+		</div>
+		<div class="title sliding">categories</div>
+	</div>
+</div>
+
+
+    <form class="searchbar" onsubmit="APP.categories.add();return false;">
+        <div class="searchbar-inner">
+            <div class="searchbar-input-wrap">
+                <input type="text" placeholder="add new category" class="cat-new" style="width: calc(100vw - 50px);display: inline-block;" />
+                <span onclick="APP.categories.add();">
+                    <i class="icon f7-icons ios-only">plus_circle</i>
+                    <i class="icon material-icons md-only">plus_circle</i>
+                </span>
+            </div>
+        </div>
+    </form>
+
+    <div class="page-content">
+
+        <div class="searchbar-backdrop"></div>
+
+
+        <div class="cat-list">
+
+
+        </div>
+
+    </div>
+</div>

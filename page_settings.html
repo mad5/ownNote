@@ -1,0 +1,55 @@
+<div class="page" data-name="settings">
+	<div class="navbar">
+	<div class="navbar-inner sliding">
+		<div class="left">
+			<a href="#" class="link back">
+				<i class="icon icon-back"></i>
+				<span class="ios-only">back</span>
+			</a>
+		</div>
+		<div class="title sliding">settings</div>
+	</div>
+</div>
+
+
+    <div class="page-content">
+
+        <div class="list myformId">
+            <ul>
+                <li class="item-content item-input item-input-outline">
+                    <div class="item-inner">
+                        <div class="item-title item-label">colortheme</div>
+                        <div class="item-input-wrap input-dropdown-wrap">
+                            <select name="colortheme" class="forminput setting-colortheme" onchange="APP.settings.saveSettings();">
+                                <option value="red">red</option>
+                                <option value="green">green</option>
+                                <option value="blue">blue</option>
+                                <option value="pink">pink</option>
+                                <option value="yellow">yellow</option>
+                                <option value="orange">orange</option>
+                                <option value="purple">purple</option>
+                                <option value="deeppurple">deeppurple</option>
+                                <option value="lightblue">lightblue</option>
+                                <option value="teal">teal</option>
+                                <option value="lime">lime</option>
+                            </select>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-content item-input item-input-outline">
+                    <div class="item-inner">
+                        <div class="item-title item-label">mode</div>
+                        <div class="item-input-wrap input-dropdown-wrap">
+                            <select name="mode" class="forminput setting-mode"  onchange="APP.settings.saveSettings();">
+                                <option value="light">light</option>
+                                <option value="dark">dark</option>
+                            </select>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+
+    </div>
+</div>
