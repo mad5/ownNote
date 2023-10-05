@@ -63,6 +63,10 @@ Experience the difference with ownNote—where your data stays yours, your focus
 
 ![](images/Screenshot_20231002-163844.png.jpg)
 
+# web-version
+
+https://www.mad5.de/ownnote/
+
 # android-App
 
 wrapped into an android-app:
